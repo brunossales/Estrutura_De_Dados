@@ -3,8 +3,6 @@
 * ## Estudei por fora, não foi conteúdo dado em aula
 
 * ## Dois arquivos que fazem a mesma coisa, mostram o valor que está no endereço e o endereço, porém os dois tem uma diferença
-  
-  <br>
 
   <ul>
   
