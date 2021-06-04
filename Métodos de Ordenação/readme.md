@@ -2,7 +2,7 @@
 
 ## Tive a ideia de colocar eles pasta por pasta para ficarem mais organizado cada método. 📂
 
-## Fiz eles mais com os estudos baseados por fora da cadeira da faculdade
+## Fiz eles mais com os estudos baseados por fora da cadeira da faculdade. ✅
 
 ## Lembrando que todos são feitos em C++. 👨‍💻
 
