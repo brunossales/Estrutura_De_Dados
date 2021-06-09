@@ -50,8 +50,8 @@ int main()
     a = c1.volume();
     b = c2.volume(); //como ainda não podemos comparar o c1 com c2 porque são objetos, temos que armazenar o valor de volume em "a" e em "b"
     // if(c1>c2){
-    //     ...              O nosso programa não sabe comparar dois objetos,
-    // }                    para ele conseguir temos que fazer uma sobrecarga do operador
+    //     ...             O nosso programa não sabe comparar dois objetos,
+    // }                   para ele conseguir temos que fazer uma sobrecarga do operador
 
     // Agora que fizemos o operator lá em cima, o nosso programa reconhece o operador ">" e vai comparar como pedimos
 
