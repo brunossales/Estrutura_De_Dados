@@ -7,7 +7,7 @@ void insertionsort(t v[], int n)
 {
     for (int i = 1; i < n; i++)
     {
-        t card = v[i];
+        t card = v[i]; // A carta que vai ficar sendo comparada com as outras e ir andando para trás no vetor
         int j = i - 1;
         while (j >= 0 && v[j] > card)
         {
@@ -20,7 +20,7 @@ void insertionsort(t v[], int n)
 
 int main()
 {
-    int vector[10] = {2, 5, 7, 1, 7, 6, 8, 10, 2, 300};
+    int vector[10] = {2, 1, 7, 1, 7, 6, 8, 10, 2, 300};
     insertionsort(vector, 10);
     for (int i = 0; i < 10; i++)
         cout << vector[i] << endl;
