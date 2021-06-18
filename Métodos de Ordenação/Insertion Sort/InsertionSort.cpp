@@ -1,4 +1,5 @@
 #include <iostream>
+#include <utility>
 using namespace std;
 
 const int MAX = 100000;
@@ -10,9 +11,7 @@ void insertion(int vetor[], int size)
         {
             if (vetor[j] < vetor[j - 1])
             {
-                int aux = vetor[j];
-                vetor[j] = vetor[j - 1];
-                vetor[j - 1] = aux;
+                swap(vetor[j], vetor[j - 1]);
             }
             else
                 break;

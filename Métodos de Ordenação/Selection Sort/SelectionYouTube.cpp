@@ -1,4 +1,5 @@
 #include <iostream>
+#include <utility>
 using namespace std;
 
 void selecao(int vet[], int n)
@@ -14,9 +15,7 @@ void selecao(int vet[], int n)
         }
         if (i != menor)
         {
-            int aux = vet[i];
-            vet[i] = vet[menor];
-            vet[menor] = aux;
+            swap(vet[i], vet[menor]);
         }
     }
 };

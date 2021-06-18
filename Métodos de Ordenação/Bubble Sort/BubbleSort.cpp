@@ -1,4 +1,5 @@
 #include <iostream>
+#include <utility>
 
 using namespace std;
 
@@ -11,9 +12,7 @@ void bubblesort(int vet[], int size)
         {
             if (vet[u] <= vet[u - 1])
             {
-                int aux = vet[u];
-                vet[u] = vet[u - 1];
-                vet[u - 1] = aux;
+                swap(vet[u], vet[u - 1]);
             }
         }
 };
