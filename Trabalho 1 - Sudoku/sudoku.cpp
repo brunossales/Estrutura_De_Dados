@@ -89,8 +89,8 @@ int main(int argc, char *args[]) //argc é a contagem de nomes que vamos ter na 
     {
         int n;
         sscanf(args[2], "%d", &n);
-        sudokuu sudoku();
-        cout << sudoku;
+        sudokuu *sud = new sudokuu();
+        cout << *(sud->celulas);
     }
 
     return 0;
