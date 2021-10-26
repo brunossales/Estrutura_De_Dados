@@ -65,6 +65,23 @@ void inversoVet(vector<int> &vet)
        ostream_iterator<int>(cout, " "));
   cout << endl;
 };
+int x = 0;
+void invertee(vector<int> vet, int len, int x = 0)
+{
+  if (x >= len / 2)
+  {
+    cout << "inv : [ ";
+    for (int i = 0; i < vet.size(); i++)
+      cout << vet.at(i) << " ";
+    cout << "]";
+    return;
+  }
+
+  int aux = vet[x];
+  vet[x] = vet[len - x - 1];
+  vet[len - x - 1] = aux;
+  invertee(vet, len, ++x);
+};
 int main()
 {
   string line;
@@ -74,13 +91,18 @@ int main()
   int valores;
   while (ss >> valores)
     vet.push_back(valores);
+  cout << "vet : [ ";
   printar(vet);
+  cout << "]";
   cout << endl;
+  cout << "rvet: [ ";
   printarAoInverso(vet);
+  cout << "]";
   cout << endl;
-  cout << soma(vet, 0, vet.size() - 1) << endl;
-  cout << multiplica(vet, 0, vet.size() - 1) << endl;
-  cout << menor(vet, vet.size() - 1, vet.at(0)) << endl;
-  vector<int> arr(vet.rbegin(), vet.rend());
-  inversoVet(arr);
+  cout << "sum : " << soma(vet, 0, vet.size() - 1) << endl;
+  cout << "mult: " << multiplica(vet, 0, vet.size() - 1) << endl;
+  cout << "min : " << menor(vet, vet.size() - 1, vet.at(0)) << endl;
+  // vector<int> arr(vet.rbegin(), vet.rend());
+  // inversoVet(arr);
+  invertee(vet, vet.size(), 0);
 }
