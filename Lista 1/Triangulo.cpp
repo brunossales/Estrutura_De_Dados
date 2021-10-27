@@ -9,7 +9,7 @@ int calc(int i, int j, int n)
     return aux[i][j];
   else
   {
-    calc(i + 1, j, n) + calc(i + 1, j + 1, n);
+    aux[i][j] = calc(i + 1, j, n) + calc(i + 1, j + 1, n);
     return aux[i][j];
   }
 };
@@ -34,10 +34,11 @@ int main()
   calc(0, 0, v.size());
   for (int i = 0; i < v.size(); i++)
   {
+    cout << "[ ";
     for (int j = 0; j <= i; j++)
     {
       cout << aux[i][j] << " ";
     }
-    cout << "\n";
+    cout << "]\n";
   }
 }
