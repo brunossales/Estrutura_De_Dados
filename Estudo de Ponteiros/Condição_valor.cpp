@@ -7,7 +7,6 @@ int main()
 {
     int var[MAX] = {10, 100, 200};
     int *ptr;
-
     // let us have array address in pointer.
     ptr = var;
 
