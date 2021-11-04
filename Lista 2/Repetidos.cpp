@@ -23,25 +23,30 @@ int contagem(vector<int> vec)
 {
   int contagem = 0;
   int i = 0;
-  int tam = vec.size();
-  while (i < vec.size() - 1)
+  while (i < vec.size())
   {
     //  1 1 1 2 2 3 3 5
     if (vec[i] == vec[i + 1])
     {
       contagem++;
-      for (int j = i; j < vec.size() - 1; j++)
+      int aux = 0;
+      for (int j = i + 1; j < vec.size(); j++){
+        aux++;
         if (vec[j] != vec[j + 1])
         {
           i = j;
+          if(aux > 1)
+            contagem++;
           break;
         }
+      }
     }
-    else
+    else{
       i++;
+    }
   }
-  if (vec[vec.size() - 1] == 5)
-    contagem++;
+//   if (vec[vec.size() - 1] == 5)
+//     contagem++;
   return contagem;
 };
 
