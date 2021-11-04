@@ -39,6 +39,6 @@ int main()
     cin >> pacientes[i];
   insertionSort(vacinas, 0, tam - 1);
   insertionSort(pacientes, 0, tam - 1);
-  string saida = testaSeNaoMorre(vacinas, pacientes) == true ? "yes" : "no";
+  string saida = testaSeNaoMorre(vacinas, pacientes) == true ? "Yes" : "No";
   cout << saida << endl;
 }
