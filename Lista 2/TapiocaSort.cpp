@@ -7,7 +7,7 @@ int aux = 0;
 int maior(vector<int> vec, int tam)
 {
   int maior = 0;
-  for (int i = 1; i < tam; i++)
+  for (int i = 1; i <= tam; i++)
     if (vec[i] > vec[maior])
       maior = i;
   return maior;
@@ -15,44 +15,57 @@ int maior(vector<int> vec, int tam)
 //esta ordenado
 bool ordenado(vector<int> vec)
 {
-  for (int i = 0; i < vec.size() - 1; i++)
+  int tam = vec.size() - 1;
+  for (int i = 0; i < tam; i++)
     if (vec[i] > vec[i + 1])
       return false;
   return true;
 };
-//virada
+void inverter(vector<int> &vec, int index)
+{
+  for (int i = 0, j = index; i < j; i++, j--)
+    swap(vec[i], vec[j]);
+};
+
+void print(vector<int> &vec)
+{
+  int n = vec.size();
+  for (int i = 0; i < n; i++)
+  {
+    cout << vec[i] << " ";
+  }
+  cout << "0" << endl;
+};
+
 void virada(vector<int> &vec, int &con)
 {
-  if (ordenado(vec))
-    return;
-  int tam = vec.size() - 1 - aux;
-  int index = maior(vec, tam);
-  aux++;
-  //virar uma parte, do maior pra esquerda
-  for (int i = index; i >= 0; i--)
+  int n = vec.size();
+  vector<int> res;
+  for (int i = n - 1; i >= 0; i--)
   {
-    // 1 2 3 5 6
-    if (index % 2 != 0 && i == index / 2)
-      continue;
-    else
-      swap(vec[i], vec[index - i]);
+    int index = maior(vec, i);
+
+    // cout << "index : " << index << endl;
+
+    if (index == 0)
+    {
+      inverter(vec, i);
+      res.push_back(n - i);
+    }
+    else if (index != i)
+    {
+      inverter(vec, index);
+      inverter(vec, i);
+      res.push_back(n - index);
+      res.push_back(n - i);
+    }
+    if (ordenado(vec))
+    {
+      print(res);
+      break;
+    }
+    // print(vec);
   }
-  con++;
-  if (ordenado(vec))
-    return;
-  //virar todo
-  for (int i = tam; i >= 0; i--)
-  {
-    // 1 2 3 5 6
-    if (tam % 2 != 0 && i == tam / 2)
-      continue;
-    else
-      swap(vec[i], vec[tam - i]);
-  }
-  con++;
-  if (ordenado(vec))
-    return;
-  virada(vec, con);
 };
 
 int main()
@@ -60,11 +73,9 @@ int main()
   int tam;
   int con = 0;
   cin >> tam;
-  vector<int> tapiocas(tam);
+  vector<int> tapiocas;
+  tapiocas.resize(tam);
   for (int i = 0; i < tam; i++)
     cin >> tapiocas[i];
   virada(tapiocas, con);
-  for (int i = con; i >= 0; i++)
-    cout << i << " ";
-  cout << "\n";
 }
