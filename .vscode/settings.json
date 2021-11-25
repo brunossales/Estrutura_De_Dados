@@ -49,5 +49,6 @@
         "bitset": "cpp",
         "regex": "cpp",
         "valarray": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }
