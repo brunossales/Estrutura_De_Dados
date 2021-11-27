@@ -118,17 +118,21 @@ int main()
     Product c(value, valuee);
     twoSesion.push_back(c);
   }
+
   shercOne(oneSesion, exit, p);
   shercTwo(twoSesion, exit, q);
   insertionSort(exit, 0, exit.size() - 1);
   for (int i = 0; i < exit.size(); i++)
-    if (exit[i] < exit[i + 1] == false && exit[i + 1].price == exit[i].price)
-      swap(exit[i], exit[i + 1]);
+  {
+    for (int j = i + 1; j < exit.size(); j++)
+      if (exit[j] < exit[i])
+        swap(exit[i], exit[j]);
+  }
   for (int i = 0; i < exit.size(); i++)
   {
     if (i == exit.size() - 1)
     {
-      cout << exit[i].name << endl;
+      cout << exit[i].name << "\n";
       break;
     }
     cout << exit[i].name << " ";
