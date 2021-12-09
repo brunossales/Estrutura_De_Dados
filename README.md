@@ -10,11 +10,11 @@
 ## 💻 Pré-requisitos
 
   - ## Não teve, o professor Wladimir tentou ao máximo ensinar desde os conceitos mais simples de C e C++;
-  - ## Persistir e não desister nas dificuldades.
+  - ## Persistir e não desistir nas dificuldades.
 
 ## 🚀 Usando C/C++
 
-## ☕ Códigos feitos para estudo e Listas
+## ☕ Códigos feitos para estudos e Listas
 
 ## 📫 Contribuido para trazer os conhecimentos sobre as estruturas de dados
 
