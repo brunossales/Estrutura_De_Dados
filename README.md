@@ -23,4 +23,4 @@
 - ## Professor Wladimir; 
 - ## Aluno e autor Bruno Sales.
 
-[⬆ Voltar ao topo](#Estrutura-De-Dados-📈)
+[⬆ Voltar ao topo](#Estrutura-De-Dados-📈)<br>
