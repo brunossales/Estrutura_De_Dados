@@ -1,4 +1,4 @@
-# Estrutura De Dados 📈 
+# Estrutura De Dados 📈
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
@@ -23,4 +23,4 @@
 - ## Professor Wladimir; 
 - ## Aluno e autor Bruno Sales.
 
-[⬆ Voltar ao topo](#-Estrutura-De-Dados-📈-)
+[⬆ Voltar ao topo](#Estrutura-De-Dados-📈)
