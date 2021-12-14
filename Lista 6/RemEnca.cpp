@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cassert>
+
 using namespace std;
 
 class ListNode
@@ -13,30 +14,31 @@ public:
   ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-ListNode *deleteDuplicates(ListNode *head)
+ListNode *removeElements(ListNode *head, int val)
 {
   if (head == nullptr)
     return nullptr;
-
-  if (head->next == nullptr)
-    return head;
-
-  if (head->val != head->next->val)
-  {
-    head->next = deleteDuplicates(head->next);
-    return head;
-  }
   else
   {
-    return deleteDuplicates(head->next);
+    if (head->val == val)
+    {
+      auto aux = head->next;
+      delete head;
+      return removeElements(aux, val);
+    }
+    else
+    {
+      head->next = removeElements(head->next, val);
+      return head;
+    }
   }
 }
 
 int main()
 {
-  int n;
+  int n, val;
   ListNode *head = nullptr;
-  cin >> n;
+  cin >> n >> val;
   for (int i = 0; i < n; i++)
   {
     ListNode *ptr;
@@ -53,7 +55,9 @@ int main()
       ptr = ptr->next;
     }
   }
-  deleteDuplicates(head);
+
+  head = removeElements(head, val);
+
   for (ListNode *ptr = head; ptr != nullptr; ptr = ptr->next)
     cout << ptr->val << endl;
 
