@@ -1,4 +1,4 @@
-# Estrutura De Dados 📈 
+# Estrutura De Dados 📈
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
@@ -10,11 +10,11 @@
 ## 💻 Pré-requisitos
 
   - ## Não teve, o professor Wladimir tentou ao máximo ensinar desde os conceitos mais simples de C e C++;
-  - ## Persistir e não desister nas dificuldades.
+  - ## Persistir e não desistir nas dificuldades.
 
 ## 🚀 Usando C/C++
 
-## ☕ Códigos feitos para estudo e Listas
+## ☕ Códigos feitos para estudos e Listas
 
 ## 📫 Contribuido para trazer os conhecimentos sobre as estruturas de dados
 
@@ -23,4 +23,4 @@
 - ## Professor Wladimir; 
 - ## Aluno e autor Bruno Sales.
 
-[⬆ Voltar ao topo](#-Estrutura-De-Dados-📈)
+[⬆ Voltar ao topo](#estrutura-de-dados-)<br>
