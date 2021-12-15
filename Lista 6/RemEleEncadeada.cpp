@@ -53,7 +53,7 @@ int main()
       ptr = ptr->next;
     }
   }
-  deleteDuplicates(head);
+  head = deleteDuplicates(head);
   for (ListNode *ptr = head; ptr != nullptr; ptr = ptr->next)
     cout << ptr->val << endl;
 
