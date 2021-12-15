@@ -4,6 +4,8 @@
     ".stylelintrc": "json",
     ".prettierrc": "json",
     "*.tsx": "typescriptreact",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "ostream": "cpp",
+    "new": "cpp"
   }
 }

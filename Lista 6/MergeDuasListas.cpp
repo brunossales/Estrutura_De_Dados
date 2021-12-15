@@ -29,19 +29,41 @@ ListNode *mergeTwoLists(ListNode *l1, ListNode *l2)
   //  }
 
   ListNode *aux = nullptr;
-  aux = new ListNode(2);
-  ListNode *auxptr = aux;
   int menor;
-  for (ListNode *i = l1; i != nullptr; i = l1->proximo)
+  // 1 2
+  // 2 1
+  while (l1 != nullptr || l2 != nullptr)
   {
-    menor = i->valor;
-    for (ListNode *j = l2; j != nullptr; j = l2->proximo)
+    ListNode *ptr;
+    int menor = l1->valor <= l2->valor ? l1->valor : l2->valor;
+    int maior = l1->valor >= l2->valor ? l1->valor : l2->valor;
+    if (aux == nullptr)
     {
-      if (menor > j->valor)
-        menor = j->valor;
+      aux = new ListNode(menor);
+      ptr = aux;
+      ptr->proximo = new ListNode(maior, nullptr);
+      ptr = ptr->proximo;
     }
-    auxptr->proximo = new ListNode(menor, nullptr);
-    auxptr = auxptr->proximo;
+    else if (l1 == nullptr && l2 != nullptr)
+    {
+      ptr->proximo = new ListNode(l2->valor, nullptr);
+      ptr = ptr->proximo;
+    }
+    else if (l1 != nullptr && l2 == nullptr)
+    {
+      ptr->proximo = new ListNode(l1->valor, nullptr);
+      ptr = ptr->proximo;
+    }
+    else
+    {
+      ptr->proximo = new ListNode(menor, nullptr);
+      ptr = ptr->proximo;
+      ptr->proximo = new ListNode(maior, nullptr);
+      ptr = ptr->proximo;
+    }
+
+    l1 = l1->proximo;
+    l2 = l2->proximo;
   }
   return aux;
 }
@@ -74,7 +96,7 @@ int main()
   ListNode *lista1 = readList();
   ListNode *lista2 = readList();
   ListNode *head = mergeTwoLists(lista1, lista2);
-  for (ListNode *pont = head; pont != nullptr; pont->proximo)
+  for (auto *pont = head; pont != nullptr; pont = pont->proximo)
     cout << pont->valor << endl;
 
   return 0;
