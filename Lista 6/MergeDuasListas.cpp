@@ -14,55 +14,53 @@ public:
   ListNode(int x) : valor(x), proximo(nullptr) {}
   ListNode(int x, ListNode *next) : valor(x), proximo(next) {}
 };
+ListNode *insert_back(ListNode *head, int val)
+{
+
+  if (head == nullptr)
+    return new ListNode(val);
+  else
+    head->proximo = insert_back(head->proximo, val);
+  return head;
+}
 ListNode *mergeTwoLists(ListNode *l1, ListNode *l2)
 {
-  //  if (l1 == nullptr && l2 == nullptr)
-  //    return nullptr;
-  //  if (l1 == nullptr && l2 != nullptr)
-  //    return mergeTwoLists(l1, l2->proximo);
-  //  if (l2 == nullptr && l1 != nullptr)
-  //    return mergeTwoLists(l1->proximo, l2);
-  //  else {
-  //    if(l1->valor <= l2->valor){
-  //     auto aux =
-  //    }
-  //  }
 
   ListNode *aux = nullptr;
-  int menor;
-  // 1 2
-  // 2 1
-  while (l1 != nullptr || l2 != nullptr)
+  ListNode *ptr;
+  if (l1->valor > l2->valor || l1->valor == nullptr)
   {
-    ListNode *ptr;
-    int menor = l1->valor <= l2->valor ? l1->valor : l2->valor;
-    int maior = l1->valor >= l2->valor ? l1->valor : l2->valor;
-    if (aux == nullptr)
+    aux = new ListNode(l2->valor);
+    ptr = aux;
+    l2 = l2->proximo;
+  }
+  else
+  {
+    aux = new ListNode(l1->valor);
+    ptr = aux;
+    l1 = l1->proximo;
+  }
+  while (l1 != nullptr && l2 != nullptr)
+  {
+    if (l2->valor < l1->valor)
     {
-      aux = new ListNode(menor);
-      ptr = aux;
-      ptr->proximo = new ListNode(maior, nullptr);
-      ptr = ptr->proximo;
-    }
-    else if (l1 == nullptr && l2 != nullptr)
-    {
-      ptr->proximo = new ListNode(l2->valor, nullptr);
-      ptr = ptr->proximo;
-    }
-    else if (l1 != nullptr && l2 == nullptr)
-    {
-      ptr->proximo = new ListNode(l1->valor, nullptr);
-      ptr = ptr->proximo;
+      insert_back(aux, l2->valor);
+      l2 = l2->proximo;
     }
     else
     {
-      ptr->proximo = new ListNode(menor, nullptr);
-      ptr = ptr->proximo;
-      ptr->proximo = new ListNode(maior, nullptr);
-      ptr = ptr->proximo;
+      insert_back(aux, l1->valor);
+      l1 = l1->proximo;
     }
-
+  }
+  while (l1 != nullptr)
+  {
+    insert_back(aux, l1->valor);
     l1 = l1->proximo;
+  }
+  while (l2 != nullptr)
+  {
+    insert_back(aux, l2->valor);
     l2 = l2->proximo;
   }
   return aux;
