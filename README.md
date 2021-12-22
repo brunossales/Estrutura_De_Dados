@@ -2,10 +2,10 @@
 
 <p align="center">
 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/brunossales/Estrutura_De_Dados)
+![GitHub language count](https://img.shields.io/github/languages/count/brunossales/Estrutura_De_Dados)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/brunossales/Estrutura_De_Dados)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/brunossales/Estrutura_De_Dados)
 
 </p>
 
