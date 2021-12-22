@@ -1,9 +1,13 @@
 # Estrutura De Dados 📈
 
+<p align="center">
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
+
+</p>
 
 ## 📚 Respositório destinado aos estudos da cadeira de Estrutura de Dados.
 
