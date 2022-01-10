@@ -10,22 +10,26 @@
 
 </div>
 
-## 📚 Respositório destinado aos estudos da cadeira de Estrutura de Dados.
+## 📚 Repositório destinado aos estudos da cadeira de Estrutura de Dados.
+
+## 📁 Dentro de cada pasta tem o Readme explicando sobre qual conteúdo foi abordado.
 
 ## 💻 Pré-requisitos
 
   - ## Não teve, o professor Wladimir tentou ao máximo ensinar desde os conceitos mais simples de C e C++;
+  
   - ## Persistir e não desistir nas dificuldades.
 
 ## 🚀 Usando C/C++
 
 ## ☕ Códigos feitos para estudos e Listas
 
-## 📫 Contribuido para trazer os conhecimentos sobre as estruturas de dados
+## 📫 Contribuindo para trazer os conhecimentos sobre as estruturas de dados
 
 ## 🤝 Colaboradores
 
 - ## Professor Wladimir; 
+  
 - ## Aluno e autor Bruno Sales.
 
 [⬆ Voltar ao topo](#estrutura-de-dados-)<br>
