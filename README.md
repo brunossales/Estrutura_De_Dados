@@ -10,9 +10,9 @@
 
 </div>
 
-## 📚 Repositório destinado aos estudos da cadeira de Estrutura de Dados.
+## 📚 Repositório destinado aos estudos da cadeira de Estrutura de Dados
 
-## 📁 Dentro de cada pasta tem o Readme explicando sobre qual conteúdo foi abordado.
+## 📁 Dentro de cada pasta tem o Readme explicando sobre qual conteúdo foi abordado
 
 ## 💻 Pré-requisitos
 
