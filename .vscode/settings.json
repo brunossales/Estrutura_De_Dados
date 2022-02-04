@@ -49,7 +49,8 @@
         "bitset": "cpp",
         "regex": "cpp",
         "valarray": "cpp",
-        "cassert": "cpp"
+        "cassert": "cpp",
+        "list": "cpp"
     },
     "cmake.configureOnOpen": false,
     "C_Cpp.errorSquiggles": "Disabled"
