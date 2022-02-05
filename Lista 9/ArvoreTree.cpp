@@ -1,7 +1,5 @@
 #include <iostream>
 #include <sstream>
-#include <vector>
-#include <string>
 using namespace std;
 
 struct Node
@@ -20,7 +18,6 @@ struct Node
 struct BTree
 {
   Node *root;
-  vector<string> exit;
   BTree()
   {
     this->root = nullptr;
@@ -59,25 +56,25 @@ struct BTree
     __destroy(this->root);
   }
 
-  find_path(Node *node, int value)
+  string find_path(Node *node, int value)
   {
     if (node == nullptr)
     {
-      return;
+      return "!";
     }
     else if (node->value == value)
     {
-      exit.push_back("x");
-      return exit;
+      return "x";
     }
     else
     {
-      exit.push_back("l");
-      return find_path(node->left, value);
-      exit.pop_back();
-      exit.push_back("r");
-      return find_path(node->right, value);
-      exit.pop_back();
+      string procurandoNaEsquerda = find_path(node->left, value);
+      if (procurandoNaEsquerda.back() == 'x')
+        return "l" + procurandoNaEsquerda;
+      string procurandoNaDireita = find_path(node->right, value);
+      if (procurandoNaDireita.back() == 'x')
+        return "r" + procurandoNaDireita;
+      return "!"
     }
   }
 };
@@ -89,7 +86,6 @@ int main()
   BTree bt(line);
   int value;
   cin >> value;
-  vector<string> path = bt.find_path(bt.root, value);
-  for (int i = 0; i < path.size(); i++)
-    cout << path[i];
+  string path = bt.find_path(bt.root, value);
+  cout << path << endl;
 }
