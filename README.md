@@ -7,10 +7,10 @@
 
 <div align="center">
 
-![GitHub repo size](https://img.shields.io/github/repo-size/brunossales/Estrutura_De_Dados)
-![GitHub language count](https://img.shields.io/github/languages/count/brunossales/Estrutura_De_Dados)
-<img height=20he src="https://img.shields.io/github/stars/brunossales/Estrutura_De_Dados?style=social" /> 
-<img height=20he src="https://img.shields.io/github/forks/brunossales/Estrutura_De_Dados?style=social" /> 
+<img height=25he src="https://img.shields.io/github/repo-size/brunossales/Estrutura_De_Dados" /> 
+<img height=25he src="https://img.shields.io/github/languages/count/brunossales/Estrutura_De_Dados" /> 
+<img height=25he src="https://img.shields.io/github/stars/brunossales/Estrutura_De_Dados?style=social" /> 
+<img height=25he src="https://img.shields.io/github/forks/brunossales/Estrutura_De_Dados?style=social" /> 
 
 </div>
 
