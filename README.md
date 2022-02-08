@@ -9,7 +9,14 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/brunossales/Estrutura_De_Dados)
 ![GitHub language count](https://img.shields.io/github/languages/count/brunossales/Estrutura_De_Dados)
+
+<a href="https://img.shields.io/github/stars/brunossales/Estrutura_De_Dados?style=social" with = 100he> 
+
 ![Star GitHub](https://img.shields.io/github/stars/brunossales/Estrutura_De_Dados?style=social)
+
+</a>
+
+
 ![Fork GitHub](https://img.shields.io/github/forks/brunossales/Estrutura_De_Dados?style=social)
 
 </div>
