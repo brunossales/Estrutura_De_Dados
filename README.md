@@ -9,9 +9,8 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/brunossales/Estrutura_De_Dados)
 ![GitHub language count](https://img.shields.io/github/languages/count/brunossales/Estrutura_De_Dados)
-![GitHub forks](https://img.shields.io/github/forks/brunossales/Estrutura_De_Dados)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/brunossales/Estrutura_De_Dados)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/brunossales/Estrutura_De_Dados)
+![Star GitHub](https://img.shields.io/github/stars/brunossales/Estrutura_De_Dados?style=social)
+![Fork GitHub](https://img.shields.io/github/forks/brunossales/Estrutura_De_Dados?style=social)
 
 </div>
 
