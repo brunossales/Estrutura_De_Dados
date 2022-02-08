@@ -7,8 +7,8 @@
 
 <div align="center">
 
-<img height=23he src="https://img.shields.io/github/repo-size/brunossales/Estrutura_De_Dados" /> 
-<img height=23he src="https://img.shields.io/github/languages/count/brunossales/Estrutura_De_Dados" /> 
+<img height=24he src="https://img.shields.io/github/repo-size/brunossales/Estrutura_De_Dados" /> 
+<img height=24he src="https://img.shields.io/github/languages/count/brunossales/Estrutura_De_Dados" /> 
 <img height=25he src="https://img.shields.io/github/stars/brunossales/Estrutura_De_Dados?style=social" /> 
 <img height=25he src="https://img.shields.io/github/forks/brunossales/Estrutura_De_Dados?style=social" /> 
 
