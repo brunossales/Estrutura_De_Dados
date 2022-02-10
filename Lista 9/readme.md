@@ -1,4 +1,4 @@
-# Lista 09 - Árvore Binária ✅ 
+# Lista 09 - Árvore Binária 🌳 
 
 - ## Lista feita usando árvore binária
 
